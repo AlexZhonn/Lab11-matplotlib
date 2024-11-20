@@ -105,7 +105,7 @@ def program():
                     grade3.append(int(content.split()[0][-2:]))
                 elif content.split()[0][4:8] == Ass_ID:
                     grade3.append(int(content.split()[0][-2:]))
-        plt.hist(grade3,[0,25,50,75,100])
+        plt.hist(grade3, bins = [0,25,50,75,100])
         plt.show()
 if __name__ == "__main__":
     program()
